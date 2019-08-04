@@ -37,6 +37,7 @@ interface IState {
 interface IProps {
   slides: Slide[];
   goToSlide?: number;
+  defaultIndex: number;
   showNavigation: boolean;
   offsetRadius: number;
   animationConfig: object;
@@ -47,12 +48,17 @@ function mod(a: number, b: number): number {
 }
 
 class Carousel extends Component<IProps, IState> {
-  state: IState = {
-    index: 0,
-    goToSlide: null,
-    prevPropsGoToSlide: 0,
-    newSlide: false
-  };
+  state: IState;
+
+  constructor(props: IProps) {
+    super(props);
+    this.state = {
+      index: props.defaultIndex,
+      goToSlide: null,
+      prevPropsGoToSlide: 0,
+      newSlide: false
+    }
+  }
 
   goToIn?: number;
 

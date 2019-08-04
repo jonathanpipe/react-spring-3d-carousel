@@ -1,11 +1,11 @@
 {
-  "name": "react-spring-3d-carousel",
-  "version": "1.1.4",
+  "name": "jsweetman-react-spring-3d-carousel",
+  "version": "1.1.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gutiguy/react-spring-3d-carousel"
   },
-  "description": "A 3D Carousel component for images built with React and utilizing react-spring for controlling slide transitions.",
+  "description": "Fork of git+https://github.com/gutiguy/react-spring-3d-carousel ",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
   "scripts": {
